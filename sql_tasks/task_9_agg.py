@@ -6,7 +6,7 @@ def get_popular_skus():
     
     # Task: Return SKUs where the SUM of quantity across all orders is > 1.
     query = """
-    -- WRITE YOUR SQL HERE
+    select sku from Order_Items group by sku having sum(quantity) > 1;
     """
     
     cursor.execute(query)

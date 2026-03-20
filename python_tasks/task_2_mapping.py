@@ -3,8 +3,10 @@
 # and values are the count of occurrences.
 
 def count_categories(categories):
-    # TODO: Write your logic here
-    pass
+    data = {}
+    for category in categories:
+        data[category] = data.get(category, 0) + 1
+    return data
 
 # Test Case
 data = ['Brakes', 'Engine', 'Brakes', 'Tools', 'Engine', 'Brakes']

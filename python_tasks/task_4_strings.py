@@ -5,7 +5,7 @@ def format_sku(sku_string):
     """
     Instructions: Convert 'engine-oil-10w30' to 'Engine Oil 10w30'.
     """
-    # TODO: Implement logic
-    pass
+    sku = sku_string.replace('-', ' ')
+    return sku.title()
 
 # Test: format_sku("brake-pads-ceramic") -> "Brake Pads Ceramic"

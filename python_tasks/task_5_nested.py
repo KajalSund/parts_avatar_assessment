@@ -2,8 +2,8 @@
 # Instructions: Extract 'year'. If any key is missing, return "Unknown".
 
 def get_vehicle_year(data):
-    # TODO: Write your logic here safely
-    pass
+    
+    return "Unknown" if data['specs']['model_info']['year'] is None else data['specs']['model_info']['year']
 
 # Test Case
 vehicle = {'specs': {'model_info': {'year': 2024}}}
